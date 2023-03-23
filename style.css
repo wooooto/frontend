@@ -1,0 +1,53 @@
+p{
+    color: rgb(255, 31, 240);
+}
+
+h3{
+    color: darkgreen;
+}
+
+h4{
+    background-color: black;
+    color: white;
+}
+
+h5{
+    color: red;
+}
+
+*{
+    font-weight: bolder;
+}
+
+.like{
+    color: yellow;
+    background-color: black;
+}
+
+.lion{
+    color: red;
+}
+
+
+
+.korea{
+    color: crimson;
+}
+
+p.korea{
+    color: blue;
+}
+
+p.korea.sejong{
+    color: purple;
+}
+
+
+
+#korea{
+    color: coral;
+}
+
+#sejong{
+    color: darkgreen;
+}
