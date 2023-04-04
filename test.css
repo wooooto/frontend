@@ -1,0 +1,54 @@
+/* 자손 결합자, outer클래스가 적용된 태그아래의 모든 li 태그들에 적용 */
+.outer li {
+    color: olivedrab;
+}
+ 
+/* 자식(1촌 자손) 결합자, 바로 하나 밑의 자손만 적용됨????? */
+.outer > li {
+    color: dodgerblue;
+}
+
+/* 자식(1,2촌 자손) 결합자, 바로 하나 밑, 두번째 밑 자손에 적용됨*/
+.outer > li li {
+    text-decoration: underline;
+}
+
+/* 뒤따르는 모든 동생들 결합자, 같은레벨에 있는 것들에 적용 */
+.starter ~ li {
+    font-style: italic;
+}
+
+/* 뒤따르는 바로 다음 동생 결합자, 지정된 클래스가 적용된 태그 바로 다음 태그에 적용됨 */
+.starter + li {
+    font-weight: bold;
+    color: salmon;
+}
+
+/* 첫 번째, 마지막 요소 가상 클래스, :은 sudo class, 가상클래스라고함 */
+ol li:first-child, ol li:last-child {
+    color: yellowgreen;
+}
+
+/* ~가 아닌 요소 가상 클래스 */
+.outer > li:not(:last-child) {
+    text-decoration: line-through;
+}
+
+/* ul중에서 outer 클래스가 적용되지 않은 ul태그 아래의 li 태그에 적용 */
+ul:not(.outer) li {
+    font-weight: bold;
+}
+
+/* ~번째 요소 가상 클래스 */
+/* #, #n, #n+#, odd, even 등 시도해보기 */
+/* 2 :두번째꺼, 2n:2의 배수번째꺼, 2n+1:2의배수+1번째꺼 , odd:홀, even:짝 */
+ol li:nth-child(3) {
+    font-weight: bold;
+    color: deeppink;
+}
+
+/* 마우스오버 가상 클래스, 마우스가 올라간거만 색을 바꿔줌 */
+li:hover {
+    font-weight: bold;
+    color: blue;
+}

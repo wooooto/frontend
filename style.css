@@ -1,53 +1,33 @@
-p{
-    color: rgb(255, 31, 240);
+span {
+    background-color: aqua;
+    color: bisque;
 }
 
-h3{
-    color: darkgreen;
-}
-
-h4{
-    background-color: black;
-    color: white;
-}
-
-h5{
+div {
+    background-color: blue;
     color: red;
 }
 
-*{
-    font-weight: bolder;
-}
-
-.like{
-    color: yellow;
-    background-color: black;
-}
-
-.lion{
+/* div {
+    background-color: blue;
     color: red;
-}
+    display: inline;
+} */
 
+/* span {
+    background-color: aqua;
+    color: bisque;
+    display: block;
+} */
 
+/* span {
+    background-color: aqua;
+    color: bisque;
+    display: inline-block;
+} */
 
-.korea{
-    color: crimson;
-}
-
-p.korea{
-    color: blue;
-}
-
-p.korea.sejong{
-    color: purple;
-}
-
-
-
-#korea{
-    color: coral;
-}
-
-#sejong{
-    color: darkgreen;
-}
+/* div {
+    background-color: blue;
+    color: red;
+    display: inline-block;
+} */
